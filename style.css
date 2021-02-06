@@ -15,7 +15,7 @@ header h1 {
   height: 60px;
   line-height: 1.8;
   margin: 0;
-  padding: 10px 0 37px 0;
+  padding: 10px 0 32px 0;
   text-align: center;
   position: relative;
   z-index: 2;
@@ -36,17 +36,12 @@ input#nav-open {
   display: none;
 }
 
-nav {
-  height: 0;
-  overflow: visible;
-}
-
 #nav-btn {
   background: #aa6b92;
   background: radial-gradient(circle, #aa6b92 0%, #754368 99%);
   border-radius: 50%;
   height: 54px;
-  padding: 10px;
+  padding: 5px;
   width: 54px;
   z-index: 3;
 }
@@ -109,14 +104,6 @@ nav {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  -webkit-transition: height 0.5s;
-  transition: height 0.5s;
-}
-
-#nav-open:checked ~ #nav-btn {
-  background-color: #0016dd;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
 }
 
 #nav-open:checked ~ #nav-btn .hamburger:nth-child(1) {
@@ -135,8 +122,6 @@ nav {
 }
 
 #nav-open:checked ~ nav #nav-list {
-  -webkit-animation: show-text 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-          animation: show-text 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
   -webkit-transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
